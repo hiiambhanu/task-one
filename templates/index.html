@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            TASK 1
+        </title>
+    </head>
+    <body>
+        <h1 align="center">THIS IS TASK 1</h1>
+        <br>
+        Please upload the image file: 
+        <br>
+        <br>
+        <form action="{{ url_for('upl') }}" enctype="multipart/form-data" method="POST">
+            <input type="file" accept="image/*" name="img">
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
